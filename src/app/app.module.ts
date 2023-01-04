@@ -8,6 +8,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { TopBarModule } from './shared/modules/topBar/topBar.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { AuthModule } from './auth/auth.module';
       maxAge: 25,
       logOnly: !isDevMode(),
     }),
+    TopBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
