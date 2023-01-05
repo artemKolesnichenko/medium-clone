@@ -60,7 +60,6 @@ export class FeedComponent implements OnInit, OnDestroy {
         // const typedParams = params as ParamsInterface
         // Number(params?.page || '1')
         this.currentPage = Number(params['page'] || '1');
-        console.log('currentPage', this.currentPage);
         this.fetchFeed();
       }
     );
